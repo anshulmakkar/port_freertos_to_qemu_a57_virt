@@ -1,3 +1,8 @@
+Instllation help:
+sudo apt-get install gcc-aarch64-linux-gnu
+make
+qemu-system-aarch64 -machine virt -cpu cortex-a57 -m 128 -serial stdio -nographic -nodefaults -kernel image.elf
+
 # port_freertos_to_qemu_a57_virt
 * Porting FreeRTOS to QEMU (-M virt -cpu cortex-a57). I am studying now.
   * The booting procedure bases from [u-boot](u-boot/u-boot)
